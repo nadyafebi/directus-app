@@ -490,6 +490,9 @@ export default {
             "field"
           );
           delete vm.$data.directusFields.note.note;
+          vm.$data.directusFields.note.options = {
+            placeholder: vm.$t("note_note")
+          };
 
           vm.$data.fields = fields
             .map(field => ({

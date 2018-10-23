@@ -284,6 +284,7 @@ export default {
   not_between: "Not between",
   not_contains: "Doesn't contain",
   note: "Note",
+  note_note: "An internal description...",
   note_hidden:
     "[Learn More](https://docs.directus.io/app/admin-guide/collections.html#hidden)",
   note_icon: "The icon shown in the App's navigation sidebar",
