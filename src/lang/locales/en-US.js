@@ -91,7 +91,6 @@ export default {
     alias:
       "Fields that do not save data or do not have corresponding database columns",
     array: "Standard array format in API response",
-    boolean: "True or False",
     datetime: "A date and time in ISO format, eg: 2018-09-19T14:00:43.381Z",
     date: "Date, eg: 2018-09-19",
     time: "Time, eg: 14:09:22",
@@ -131,6 +130,7 @@ export default {
       MEDIUMTEXT: "A string with a max length of 16,777,215 characters.",
       LONGTEXT: "A string with a max length of 4,294,967,295 characters.",
 
+      BOOLEAN: "True or false. Is saved as either 1 or 0 respectively.",
       TINYINT:
         "An integer. When signed (allows negative) length is -128 to 127, otherwise the max is 255.",
       SMALLINT:
@@ -327,6 +327,9 @@ export default {
   options: "Options",
   password: "Password",
   password_reset_sent: "Password reset email sent to {email}",
+  permissions_no_collections: "This project does not have any collections yet.",
+  permissions_admin:
+    "Admins have access to all managed data within the system by default.",
   permission_states: {
     none: "None",
     mine: "Mine Only",
